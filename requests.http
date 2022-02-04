@@ -1,0 +1,26 @@
+GET http://localhost:3000/person
+
+###
+GET http://localhost:3000/person/71fcb1d34a35e1fa4afc7985
+###
+POST http://localhost:3000/person/
+content-type: application/json
+
+{
+  "name" : "Derek",
+  "salary" : 1200,
+  "approved" : true
+}
+
+###
+PATCH http://localhost:3000/person/61fcb1d34a35e1fa4afc7985
+content-type: application/json
+
+{
+  "name" : "Zanuff",
+  "salary" : 12000,
+  "approved" : true
+}
+
+###
+DELETE http://localhost:3000/person/61fcb94612b90977049e4cd7
